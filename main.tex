@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV 
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+  \usepackage{fontspec} % For loading fonts
+  \defaultfontfeatures{Mapping=tex-text}
+  % \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+  % \fontspec{[FontAwesome.otf]}
+  \setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                           %% your font files are in a folder
+   Extension = .ttf,
+   UprightFont = *-Regular,
+   BoldFont = *-Bold,
+   ItalicFont = *-Italic,
+   SmallCapsFont = *-Medium]
+  {Ubuntu}
+  \fontspec{[fontawesome-webfont.ttf]}
+  
+  \usepackage{color}
+  \definecolor{primary}{RGB}{91,12,43}
+  \definecolor{secondary}{RGB}{55, 1, 42}
+  \definecolor{extra}{RGB}{6, 10, 64}
+  \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+  
+  \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+  
+  %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+  %\usepackage{fullpage}
+  \usepackage{geometry}
+  \geometry{a4paper,margin=0.40cm}
+  %\geometry{a4paper,left=20mm, top=20mm}
+   %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+  
+  \usepackage{hyperref} % Required for adding links	and customizing them
+  %\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+  \definecolor{linkcolour}{rgb}{0,0,0} % Link color
+  \hypersetup{colorlinks,breaklinks=linkcolour,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+  
+  \usepackage{titlesec} % Used to customize the \section command
+  \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+  \titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+  
+  \usepackage{multicol}
+  \setlength{\columnsep}{0cm}
+  
+  \usepackage{tabularx}
+  
+  \usepackage{textcomp}
+  
+  \usepackage{fontawesome}
+  
+  \usepackage{enumitem}
+  \setlist[description]{%
+    topsep=10pt,               % space before start / after end of list
+    itemsep=1pt,               % space between items
+  %  font={\bfseries\sffamily\color{red}}, % if colour is needed
+  }
+  
+  \def\arraystretch{1}
+  \renewcommand{\baselinestretch}{1.1}
+  
+  \begin{document}
+  
+  \pagestyle{empty} % Removes page numbering
+  
+  %----------------------------------------------------------------------------------------
+  %	NAME AND CONTACT INFORMATION
+  %----------------------------------------------------------------------------------------
+  \begin{multicols}{3}
+  % \normalsize  \faGlobe\ {\href{http://ghostwriternr.me/}{\  ghostwriternr.me}}\\
+  \normalsize \faGithub\ {\href{https://github.com/pshishod2645}{\  pshishod2645}}\\
+  % \normalsize  \faLinkedinSquare\ {\href{https://www.linkedin.com/in/kousshik-raj-murali-b3976916a/}{\  Kousshik Raj}}\\
+  \normalsize \faHome {\href{http://codeforces.com/profile/pshishod2645}{\ \space pshishod2645 (Codeforces)}}\\
+  \normalsize \faHome {\href{https://www.codechef.com/users/pshishod2645}{\ \space pshishod2645 (CodeChef)}}\\
+  \columnbreak
+  \normalsize\par{\centering{\huge\textsc{\textcolor{primary}{Prashant Shishodia}\par} % Your name
+  % \vspace{-0.6cm}
+  \par{\centering\normalsize {\textsc{A-202, JCB Hall of Residence, }}\hfill\par}
+  \vspace{-0.2cm}
+  \par{\centering\normalsize {\textsc{IIT Kharagpur, WB, India - 721302 }}\hfill\par}
+  
+  \columnbreak
+  \raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:prashant.cse.iitkgp@gmail.com}{\  prashant.cse.iitkgp@gmail.com}}\\
+  \raggedright\hfill{\faPhone\ \  +91-7060334547}
+  \end{multicols}
+  
+  %----------------------------------------------------------------------------------------
+  %	EDUCATION
+  %----------------------------------------------------------------------------------------
+  
+  \vspace{-0.6cm}
+  \newline
+  \newline
+  \section{\textcolor{primary}{Education}}
+  
+  \begin{tabular}{r|p{17.5cm}}	
+  2017-2021 & B.Tech in \textbf{Computer Science and Engineering}\hfill\textsc{GPA: } 8.80/10.0\\
+  \textsc{(Expected)}& Indian Institute of Technology, Kharagpur \hfill\\
+  2017 & Higher Secondary School Certificate Examination, \textbf{CBSE}\hfill\textsc{Percentage: } 94.8\% \\
+  & Jawahar Navodaya Vidyalaya, Kottayam \hfill\\
+  2015 & Secondary School Certificate Examination, \textbf{CBSE}\hfill\textsc{CGPA: } 9.2/10 \\
+  & Jawahar Navodaya Vidyalaya, Bulandshahr \hfill\\
+  %&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
+  \end{tabular}
+  
+  %----------------------------------------------------------------------------------------
+  %	SKILLS 
+  %----------------------------------------------------------------------------------------
+  % \vspace{-0.1cm}
+  \hfill\\
+  \section{\textcolor{primary}{Technical Skills}}
+  
+  \begin{tabular}{r|p{15cm}}
+  \textsc{Programming Languages} & C,\ C++,\ Python, \ Matlab, \ Octave \\
+  \textsc{Libraries / Frameworks} & OpenCV, \ Numpy \\
+  %\textsc{Databases} & MySQL, MongoDB\\
+  \textsc{Systems / Platforms} & Linux, \ Windows,\ Git \\
+  \textsc{Others} & Bash,\ Latex,\ Solidworks \\
+  %\textsc{Markup / Templating} & HTML, CSS, Sass
+  \end{tabular}
+  
+  %----------------------------------------------------------------------------------------
+  %	Experience
+  %----------------------------------------------------------------------------------------
+  % \vspace{-0.2cm}
+  \hfill\\
+  \section{\textcolor{primary}{Internship Experience}}
+  \begin{tabularx}{\linewidth}{ l | X }
+  \textsc{April 2018} & \textbf{JEE Advanced Solutions Preparation Internship under NDLI}\\
+  \textsc{June 2018} & {- Prepared Solutions for JEE Advanced 2015 Chemistry using Latex, under a project by National Digital Library of India.}\\
+  \end{tabularx}
+  
+  %
+  %----------------------------------------------------------------------------------------
+  %	Projects
+  %----------------------------------------------------------------------------------------
+  % \vspace{-0.1cm}
+  %\section{\textcolor{primary}{Projects}}
+  %\vspace{-0.6cm}
+  %\begin{tabular}{p{19.7cm}}
+  % \fontsize{9}{12}\selectfont{
+  %\begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+  % \item[\textcolor{extra}{DigiCon},\space OpenSoft 2018 IIT Kharagpur]
+  % - The software accurately parses and mines the contents of a hand-written doctor's prescription and segregates the medicines along with their corresponding doses and lists them out in a readable fashion.\newline - Worked on segregating the medicines and doses from the extracted contents and handled the possible errors that occurred in the IP module by checking for visully similar possibilities \newline - The entry won Gold amongst 13 applicants in OpenSoft 2018, IIT Kharagpur. 
+  % \item[\textcolor{extra}{Eklavya 6.0}, \space Intelligent Ground Vehicle Competition (IGVC) 2018]
+%   -\space A robot capable of automatically navigating from one GPS co-ordinate to another by following a lane while handling all the obstacles in the path with the help of sensors and complex algorithms. \newline - Worked on the part responsible for generating the local and global path and localizing the bot from the sensor data.\newline - The bot bagged the 2nd position in the IGVC 2018 held at Oakland University, Michigan.
+  %  \item[\textcolor{secondary}{Artemis' Arrow},\space An Entertainment Hunter]
+ %  \item[\textcolor{extra}{BrkOut},\space A game made using PyGame]
+ %  - An interactive game that incorporates real time collision and momentum conservation in a graphical interface made using Pygame. It also uses a basic encryption which emphasizes the prison-breaking theme of the game.
+%  \end{description}
+ % \end{tabular}
+  %
+  \hfill\\
+  %----------------------------------------------------------------------------------------
+  %	COURSEWORK
+  %----------------------------------------------------------------------------------------
+  \vspace{-0.5cm}
+  \section{\textcolor{primary}{Related Courses} \hfill{\normalsize{* Currently Studying}}}
+  \vspace{-0.8cm}
+  \begin{tabular}{p{19.7cm}}
+  % \fontsize{9}{12}\selectfont{
+  \begin{multicols}{3}
+  \begin{description}[font=$\bullet$\hspace{2mm}\normalsize]
+   \item[\textsc{Algorithms and Data Structures}]
+   \item[\textsc{Discrete Structures}]
+   \item[\textsc{Computer Vision *}]
+   \item[\textsc{Advanced Graph Theory *}]
+   \item[\textsc{Machine Learning *}]
+  \end{description}
+  \end{multicols}
+  \end{tabular}
+  
+  %----------------------------------------------------------------------------------------
+  %	POSITIONS OF RESPONSIBILITY
+  %----------------------------------------------------------------------------------------
+  
+  % \vspace{-0.3cm}
+  % \section{\textcolor{primary}{Positions of Responsibility}}
+  
+  % \begin{tabular}{r|p{17.5cm}}
+  % \textsc{Current} & \textbf{Senior Developer, Co-Founder}, CodeStash, IIT Kharagpur \\
+  % & - \space An organization that helps to develop a passion for programming among the freshers\\
+  % \textsc{Current} & \textbf{Co-ordinator}, CodeClub, IIT Kharagpur \\
+  % & - \space The departmental society of Computer Science and Engineering that conducts multiple programming fest throughout the year and organizes monthly coding contests. \\
+  % \textsc{Current} & \textbf{Core Team Member}, Kharagpur Open Source Society, IIT Kharagpur \\
+  % & - \space An organization that aims to promote Open Sourcing and helps to develop a zeal for learning among its members. \\
+  % \textsc{Current} & \textbf{Content Manager}, Technology Literary Society, IIT Kharagpur \\
+  % \end{tabular}
+  
+  %----------------------------------------------------------------------------------------
+  %	INTERESTS   
+  %----------------------------------------------------------------------------------------
+  \hfill\\
+  \vspace{-0.5cm}
+  \section{\textcolor{primary}{Interests}}
+  \begin{description}
+  Algorithms and Data Structures, Machine Learning, Computer Vision, Cryptography, Networking and Hacking.
+  \end{description}
+  
+  \hfill\\
+ 
+  %----------------------------------------------------------------------------------------
+  %	ACHIEVEMENTS AND INVOLVEMENTS
+  %----------------------------------------------------------------------------------------
+  \vspace{-0.4cm}
+  \section{\textcolor{primary}{Achievements \& Involvements}}
+  \vspace{-0.6cm}
+  \begin{tabular}{p{19.7cm}}
+  % \fontsize{9}{12}\selectfont{
+  \begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+   \item[\textcolor{extra}{Griomoire of Code}]
+   -\space An organization that increases the awareness of various opportunities within the programming community while helping to promote the coding culture within the campus.
+  %  \item[\textcolor{secondary}{Artemis' Arrow},\space An Entertainment Hunter]\
+  
+   \item[\textcolor{extra}{Problem Setter and Tester in Codenite}]
+   -\space Problem setter and Tester in Codenite, a competitive programming contest conducted by Codeclub, IIT Kharagpur
+  %  \item[\textcolor{secondary}{Artemis' Arrow},\space An Entertainment Hunter]
+   \item[\textcolor{extra}{Scholastic Achievements}]
+   - \space \textbf{AIR 219 - JEE Advanced} (0.1 \% amongst more than 2,00,000 students).\newline 
+   - \space \textbf{AIR 63 - JEE Mains} (0.005 \% amongst more than 11,00,000 students). \newline - \space \textbf{KVPY} Scholar 
+   \newline - \space  National Top 1 \% in \textbf{National Standard Examination in Physics}
+   \newline - \space Navodaya Region Rank 1 in textbf{RMO 2015}
+   \newline - \space Qualified for Indian national olympiads in {Physics}, {Chemistry}, {Astronomy}, and {Mathematics}.
+   
+  \end{description}
+  \end{tabular}
+  
+  %----------------------------------------------------------------------------------------
+ %Position of Responsibility
+ %---------------------------------------------------------------------------------
+  
+  \vspace{-0.4cm}
+  \section{\textcolor{primary}{Position of Responsibility}}
+  \vspace{-0.6cm}
+  \begin{tabular}{p{19.7cm}}
+  % \fontsize{9}{12}\selectfont{
+  \begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+   \item[\textcolor{extra}{GES Intern}]
+   -\space Conducted The Global Entrepreneurship Summit(GES) 2018 at IIT Kharagpur with the Entrepreneurship Cell team which saw prominent speakers, important workshops and panel discussions related to queries on Entrepreneurship
+   \newline -\space Responsible for publicising the Global Entrepreneurship Summit(GES) 2018 in the city of Noida.
+  %  \item[\textcolor{secondary}{Artemis' Arrow},\space An Entertainment Hunter]\
+  
+   \item[\textcolor{extra}{Secreatary of Fine Arts}]
+   -\space Secretary of Fine Arts at Acharya Jagadish Chandra Bose Hall of Residence, IIT Kharagpur.
+   
+  \end{description}
+  \end{tabular}
+  %----------------------------------------------------------------------------------------
+  
+  %\newpage
+  %----------------------------------------------------------------------------------------
+  
+  \end{document}
+  
+  
